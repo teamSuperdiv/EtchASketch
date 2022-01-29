@@ -3,6 +3,7 @@ Variables
 */
 :root {
     --div-repeat:16;
+    --block-color: black;
 }
 
 
@@ -69,7 +70,7 @@ divs / blocks
 }
 
 .block.hovered {
-    background: black;
+    background: var(--block-color);
 }
 
 /*
@@ -107,13 +108,23 @@ button:hover {
   transition-duration: 0.1s;
 }
 
+.clearBtn {
+    margin-right: 1rem;
+}
+
 /*
 input
 */
 #user-size {
+    width: 80px;
     background-color: #FAFBFC;
     padding: 5px 16px;
     border-radius: 6px;
+    margin-right: 1rem;
+}
+
+.label {
+    margin-right: .5rem;
 }
 
 /*

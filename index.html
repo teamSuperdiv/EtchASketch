@@ -16,14 +16,14 @@
         <div>
             <div class="menu">
                 <div>
-                    <button onclick="clearAll()">Clear</button>
-                    <label for="color-picker">Pick color</label>
-                    <input id="color-picker" type="color">
+                    <button class="clearBtn" onclick="clearAll()">Clear</button>
+                    <label class="label" for="color-picker">Pick color</label>
+                    <input onchange="changeColor()" id="color-picker" type="color">
                 </div>
                 <div>
-                    <label for="user-size">Size</label>
-                    <input id=user-size type="number">
-                    <button>Apply</button>
+                    <label class="label" for="user-size">Size</label>
+                    <input id="user-size" value="16" type="number" min="16" max="64">
+                    <button onclick="changeSize()">Apply</button>
                 </div>
             </div>
             <div class="sketch-container">
