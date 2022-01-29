@@ -1,0 +1,127 @@
+/*
+Variables
+*/
+:root {
+    --div-repeat:16;
+}
+
+
+/* 
+Global 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 10vh;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 10vh;
+}
+
+/*
+header
+*/
+header h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+/*
+Sketch Container 
+*/
+.sketch-container {
+    display: grid;
+    height: 600px;
+    width: 600px;
+    grid-template-columns: repeat(var(--div-repeat),1fr);
+    grid-template-rows: repeat(var(--div-repeat),1fr);
+    border: solid 1px black;
+}
+
+.menu {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu div {
+    display: inherit;
+    align-items: center;
+}
+
+/* 
+divs / blocks
+*/
+.block {
+    background: transparent;
+}
+
+.block.hovered {
+    background: black;
+}
+
+/*
+buttons
+*/
+button {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+button:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+/*
+input
+*/
+#user-size {
+    background-color: #FAFBFC;
+    padding: 5px 16px;
+    border-radius: 6px;
+}
+
+/*
+footer 
+*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
